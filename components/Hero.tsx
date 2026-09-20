@@ -15,7 +15,7 @@ const Hero = ({ locale, t }: HeroProps) => (
         <h1
           className={`font-display font-normal text-pretty leading-[1.08] text-navy ${
             locale === "es"
-              ? "text-[clamp(1.55rem,3.4vw,2.55rem)]"
+              ? "text-[clamp(1.85rem,4.2vw,3rem)]"
               : "text-[clamp(2.15rem,6vw,4.35rem)]"
           }`}
         >
@@ -23,7 +23,7 @@ const Hero = ({ locale, t }: HeroProps) => (
             <span key={`${part}-${index}`}>
               {part}
               {index < parts.length - 1 && (
-                <span className="font-bold">{t.hero.h1Emphasis}</span>
+                <span className="font-extrabold">{t.hero.h1Emphasis}</span>
               )}
             </span>
           ))}

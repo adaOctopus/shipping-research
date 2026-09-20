@@ -12,7 +12,7 @@ const es: Dictionary = {
     languageEs: "Español",
   },
   hero: {
-    h1: "Hacemos el flete marítimo más rentable para importadores pyme.",
+    h1: "Flete marítimo más rentable para pymes.",
     h1Emphasis: "rentable",
     body: "Los cargos inesperados, los retrasos, la aduana y las reclamaciones manuales con los transitarios destruyen su negocio. Aumente sus márgenes y ahorre tiempo de envío con nuestros análisis.",
     cta: "RESERVE UNA LLAMADA CON NOSOTROS",
@@ -29,7 +29,7 @@ const es: Dictionary = {
     },
   },
   friction: {
-    h2: "Los gerentes de importación y de compras, los compradores de consumo masivo (FMCG) y los responsables de cadena de suministro se enfrentan a estos retos.",
+    h2: "Gerentes de importación, compras y FMCG se enfrentan a estos retos.",
     problems: [
       {
         number: "01",
