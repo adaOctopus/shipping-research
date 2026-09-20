@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #f6f0e4;
+  --color-cream-deep: #ede6d6;
+  --color-navy: #0e2340;
+  --color-ink: #1a2332;
+  --color-signal: #e21b24;
+  --color-annotation: #2c4a6e;
+  --color-line: #c9bfa8;
+  --color-cyan: #2ec4d6;
+  --color-cobalt: #1d4e89;
+  --color-orange: #e85d04;
+  --font-display: var(--font-fraunces), "Times New Roman", serif;
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-signal) 22%, var(--color-cream));
+  color: var(--color-navy);
+}
+
+@utility label-caps {
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-annotation);
+}
