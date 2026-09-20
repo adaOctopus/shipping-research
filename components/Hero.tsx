@@ -14,11 +14,7 @@ const Hero = () => (
           Making ocean freight for SMB importers more profitable.
         </h1>
         <p className="mt-6 max-w-md text-[1.05rem] leading-relaxed text-navy/75">
-          Wholesale import-export companies of 11 to 50 people get billed after
-          delivery for ocean freight charges they cannot independently verify —
-          CBM remeasurement, demurrage, detention, customs exam, war-risk.
-          Surprise lines hit about 5–20% of shipments. The proof usually exists.
-          It is not sent unless you ask.
+          Unexpected charges, delays, customs & manually disputing with freight forwarders destroy your business. Increase your margins and save shipping time with our insights.
         </p>
         <div className="mt-8">
           <BookCallButton>BOOK A CALL WITH US</BookCallButton>
