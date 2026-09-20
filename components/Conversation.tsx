@@ -6,6 +6,7 @@ const ROLES = [
   "FMCG buyers",
   "Import buyers",
   "Purchasing managers",
+  "Procurement managers",
   "Supply chain managers",
 ];
 
@@ -13,15 +14,16 @@ const Conversation = () => (
   <section id="conversation" className="px-5 py-20 md:px-8 md:py-28">
     <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)] lg:items-start lg:gap-20">
       <div>
-        <p className="label-caps mb-5">03 · A conversation</p>
+        {/* <p className="label-caps mb-5">03 · A conversation</p> */}
         <h2 className="max-w-xl font-display text-[clamp(1.85rem,4vw,3.1rem)] leading-[1.12] text-navy">
-          Thirty minutes on how ocean cargo lands on your dock.
+          Chat with us to have better margins when ocean cargo lands on your dock.
         </h2>
         <p className="mt-6 max-w-lg text-[1.05rem] leading-relaxed text-navy/75">
-          We are speaking with operators at wholesale import-export companies
-          of about 11 to 50 people. We are not booking your freight. We want
-          the unvarnished version of charges, tracking, carriers, customs, and
-          cash.
+          We speak with DDP and CIF import managers, purchasing managers, and
+          FMCG buyers at wholesale import-export companies of about 11 to 50
+          people — destination-side payers, not FOB exporters. If the last ocean
+          shipment came with charges after delivery you could not verify, we
+          would like to hear what they were.
         </p>
         <div className="mt-8">
           <BookCallButton>Book a call</BookCallButton>
@@ -41,9 +43,9 @@ const Conversation = () => (
           ))}
         </ul>
         <p className="mt-8 border-t border-line pt-6 text-sm leading-relaxed text-navy/70">
-          If you sit between the forwarder, the carrier, and the warehouse —
-          and the margin on the shipment is yours to protect — we would like to
-          hear how it actually runs.
+          If you hire the destination-side forwarder under DDP or CIF — and the
+          last shipment came with a remeasurement, D&amp;D, or surcharge you
+          could not check — that is the conversation.
         </p>
       </div>
     </div>

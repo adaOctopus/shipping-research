@@ -6,7 +6,11 @@ const STAGES = ["Booked", "On water", "Customs", "On dock"];
 const Header = () => (
   <header className="sticky top-0 z-50 border-b border-line/80 bg-cream/90 backdrop-blur-md">
     <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 md:px-8">
-      <a href="#top" className="shrink-0 font-display text-[1.05rem] leading-none text-navy">
+      <a
+        href="#top"
+        aria-label="Greek Ships XYZ home"
+        className="shrink-0 font-display text-[1.05rem] leading-none text-navy"
+      >
         Greek Ships{" "}
         <span className="text-signal tracking-[0.18em] text-[0.72rem] font-sans font-semibold">
           XYZ

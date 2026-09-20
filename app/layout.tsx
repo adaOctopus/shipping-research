@@ -1,6 +1,8 @@
-// Root layout: cream paper background, Fraunces + Geist, and site metadata for cold-call follow-up.
-import type { Metadata } from "next";
+// Root layout: fonts, full SEO metadata, JSON-LD, and skip link.
+import JsonLd from "@/components/JsonLd";
+import { buildMetadata } from "@/lib/metadata";
 import { Fraunces, Geist } from "next/font/google";
+import type { Viewport } from "next";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -15,10 +17,12 @@ const geist = Geist({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Greek Ships XYZ",
-  description:
-    "Research conversations with import managers, FMCG buyers, and supply chain leads at small wholesale firms about ocean cargo.",
+export const metadata = buildMetadata();
+
+export const viewport: Viewport = {
+  themeColor: "#f6f0e4",
+  width: "device-width",
+  initialScale: 1,
 };
 
 const RootLayout = ({
@@ -26,8 +30,18 @@ const RootLayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => (
-  <html lang="en">
-    <body className={`${fraunces.variable} ${geist.variable} antialiased`}>
+  <html lang="en" suppressHydrationWarning>
+    <body
+      className={`${fraunces.variable} ${geist.variable} antialiased`}
+      suppressHydrationWarning
+    >
+      <JsonLd />
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-navy focus:px-4 focus:py-2 focus:text-cream"
+      >
+        Skip to content
+      </a>
       {children}
     </body>
   </html>

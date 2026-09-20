@@ -14,7 +14,7 @@ const BookCallButton = ({
 }: BookCallButtonProps) => {
   const styles =
     variant === "primary"
-      ? "w-full bg-signal text-white hover:bg-[#c91820] sm:w-auto"
+      ? "w-full bg-signal text-white hover:bg-signal-deep sm:w-auto"
       : "shrink-0 border border-navy/25 bg-transparent text-navy hover:border-navy hover:bg-navy hover:text-cream";
 
   return (

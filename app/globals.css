@@ -5,12 +5,16 @@
   --color-cream-deep: #ede6d6;
   --color-navy: #0e2340;
   --color-ink: #1a2332;
-  --color-signal: #e21b24;
+  --color-signal: #c2642a;
+  --color-signal-deep: #9e4e20;
   --color-annotation: #2c4a6e;
   --color-line: #c9bfa8;
-  --color-cyan: #2ec4d6;
-  --color-cobalt: #1d4e89;
-  --color-orange: #e85d04;
+  --color-blush: #e5b0a2;
+  --color-coral: #eb6953;
+  --color-mustard: #bca12e;
+  --color-teal: #2a5e55;
+  --color-lavender: #b2a6be;
+  --color-sage: #b7c3c3;
   --font-display: var(--font-fraunces), "Times New Roman", serif;
   --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
 }
@@ -35,4 +39,31 @@ body {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--color-annotation);
+}
+
+@utility sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@utility not-sr-only {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+details[open] summary span:last-child {
+  transform: rotate(45deg);
 }

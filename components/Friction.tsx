@@ -4,7 +4,7 @@ const PROBLEMS = [
   {
     number: "01",
     title: "Charges that appear after the quote",
-    body: "Origin fees, destination fees, detention, demurrage. The invoice arrives with lines nobody can check against the booking, and most teams pay them.",
+    body: "A CBM or weight remeasurement that does not match the packing list. Demurrage and detention under the wrong free-time terms. Customs exam markups, war-risk surcharges, destination-mismatch fees. The invoice arrives after delivery. The measurement record exists on the forwarder’s side. It is not shared unless you already know to ask.",
   },
   {
     number: "02",
@@ -14,7 +14,7 @@ const PROBLEMS = [
   {
     number: "03",
     title: "The forwarder as the only door to the carrier",
-    body: "Operational problems live with the line. The importer talks to the forwarder. Exceptions bounce. Days disappear.",
+    body: "Proof sits with the carrier or the LCL console. The importer talks to the forwarder. Mid-size forwarders more often bake unverified charges into margin. Asking for the weighbridge record, the agreed tariff, and the W/M calculation makes a lot of lines vanish. Exceptions bounce. Days disappear.",
   },
   {
     number: "04",
@@ -26,9 +26,9 @@ const PROBLEMS = [
 const Friction = () => (
   <section id="friction" className="border-t border-line bg-cream-deep/40 px-5 py-20 md:px-8 md:py-28">
     <div className="mx-auto max-w-6xl">
-      <p className="label-caps mb-5">02 · The friction</p>
+      {/* <p className="label-caps mb-5">02 · The friction</p> */}
       <h2 className="max-w-2xl font-display text-[clamp(1.85rem,4vw,3.1rem)] leading-[1.12] text-navy">
-        What we keep hearing from people who actually receive the cargo.
+        Import & Purchase Managers, FMCG Buyers & Supply Chain Leads face these challenges.
       </h2>
 
       <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-line bg-line sm:grid-cols-2">
