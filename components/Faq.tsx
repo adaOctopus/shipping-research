@@ -1,7 +1,11 @@
 // Crawlable FAQ from operator research: post-delivery charges, CBM, D&D, dispute playbook, FOB vs DDP.
-import { FAQ_ITEMS } from "@/lib/seo";
+import type { Dictionary } from "@/lib/i18n";
 
-const Faq = () => (
+type FaqProps = {
+  t: Dictionary;
+};
+
+const Faq = ({ t }: FaqProps) => (
   <section
     id="faq"
     aria-labelledby="faq-heading"
@@ -12,16 +16,14 @@ const Faq = () => (
         id="faq-heading"
         className="max-w-2xl font-display text-[clamp(1.85rem,4vw,3.1rem)] leading-[1.12] text-navy"
       >
-        Ocean freight charges billed after delivery - what operators actually see.
+        {t.faq.h2}
       </h2>
       <p className="mt-5 max-w-xl text-[1.05rem] leading-relaxed text-navy/75">
-        From conversations with import managers, purchasing managers, and FMCG
-        buyers at wholesale firms of 11 to 50 people: remeasurement, D&amp;D,
-        customs exam, war-risk, and how to dispute a line you cannot verify.
+        {t.faq.intro}
       </p>
 
       <div className="mt-12 divide-y divide-line border-y border-line">
-        {FAQ_ITEMS.map((item) => (
+        {t.faq.items.map((item) => (
           <details key={item.question} className="group py-1">
             <summary className="flex min-h-14 cursor-pointer list-none items-start justify-between gap-4 py-4 text-left font-display text-[1.15rem] leading-snug text-navy md:text-[1.3rem]">
               <span>{item.question}</span>

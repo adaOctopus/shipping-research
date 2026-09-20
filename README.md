@@ -2,6 +2,8 @@
 
 A landing page for **Greek Ships XYZ** — ocean freight conversations with small wholesale import-export companies. The site exists so a cold call can point somewhere real: who we talk to, what we are studying, and a 30-minute Calendly conversation.
 
+Default language is **English** (`/`). The full page also exists in **Spanish** (`/es`), with a language switch in the top right of the header.
+
 It is not a freight product. It is a research front door, written so import managers, purchasing managers, and FMCG buyers can also find it on Google.
 
 ## Who it is for
@@ -18,7 +20,7 @@ The research is about ocean freight charges billed after delivery that importers
 
 ## What the page contains
 
-A single route (`/`) with four sections and a footer:
+A single English route (`/`) and a Spanish equivalent (`/es`), each with four sections and a footer:
 
 1. **Research** — headline, audience, and an original containership diagram with callouts (`charges`, `tracking`, `carriers`, `capital`)
 2. **The friction** — four operational problems, written the way operators describe them
@@ -32,8 +34,8 @@ Primary action everywhere: [Book a 30-minute call](https://calendly.com/tasos-va
 
 The page is built for organic search around **unverified ocean freight charges after delivery** — CBM remeasurement, demurrage and detention, customs exam, war-risk — for DDP/CIF wholesale importers. Copy is grounded in live operator research, not generic freight-charge stuffing. Air freight, GST, and courier queries are out of scope.
 
-- Title, description, canonical, Open Graph, Twitter card, and robots
-- `sitemap.xml` and `robots.txt`
+- Title, description, canonical, Open Graph, Twitter card, robots, and `hreflang` for `en` / `es`
+- `sitemap.xml` (English and Spanish URLs) and `robots.txt`
 - JSON-LD for Organization, WebSite, WebPage, ProfessionalService, and FAQPage
 - A visible, crawlable FAQ (content is in the HTML even when collapsed)
 - Semantic landmarks: skip link, `header`, `main`, `footer`, one `h1`
@@ -59,7 +61,9 @@ The page sits on warm cream paper and hull navy. Accents come from a six-color t
 ```
 app/
   layout.tsx              Root layout, fonts, metadata, JSON-LD, skip link
-  page.tsx                Composes header, sections, FAQ, footer
+  page.tsx                English landing page
+  es/page.tsx             Spanish landing page
+  es/opengraph-image.tsx  Spanish social share image
   globals.css             Cream / navy / clay-orange tokens and ship palette
   sitemap.ts              /sitemap.xml
   robots.ts               /robots.txt
@@ -67,7 +71,9 @@ app/
   opengraph-image.tsx     Social share image
   icon.tsx                Favicon
 components/
-  Header.tsx              Sticky wordmark, journey strip, Book a call
+  Header.tsx              Sticky wordmark, journey strip, flag switch, Book a call
+  LanguageSwitch.tsx      UK / Spain flag toggle for English and Spanish
+  HomePage.tsx            Locale-aware page composition
   Hero.tsx                Section 01 — research pitch + ship
   ShipDiagram.tsx         Original SVG containership and labels
   Friction.tsx            Section 02 — four ocean-cargo problems
@@ -78,8 +84,10 @@ components/
   BookCallButton.tsx      Shared Calendly link
 lib/
   constants.ts            URLs, site name, title, description
-  seo.ts                  Keywords, FAQ copy, JSON-LD
+  i18n/                   English and Spanish dictionaries
+  seo.ts                  Locale-aware JSON-LD
   metadata.ts             Next.js Metadata builder
+middleware.ts             Sets x-locale for html lang
 ```
 
 ## Run it
@@ -89,7 +97,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000) (English) or [http://localhost:3000/es](http://localhost:3000/es) (Spanish).
 
 ```bash
 npm run build

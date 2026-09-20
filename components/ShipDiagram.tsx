@@ -1,4 +1,5 @@
 // Original containership diagram: cream-paper silhouette, colored stacks, and research callouts.
+import type { Dictionary } from "@/lib/i18n";
 
 const COLORS = ["#e5b0a2", "#eb6953", "#bca12e", "#2a5e55", "#b2a6be", "#b7c3c3"];
 
@@ -11,14 +12,18 @@ const CONTAINERS = Array.from({ length: 13 }, (_, bay) => {
   }));
 }).flat();
 
-const LABELS = [
-  { id: "charges", text: "charges", className: "left-0 top-[28%]" },
-  { id: "tracking", text: "tracking", className: "left-[52%] top-0 -translate-x-1/2" },
-  { id: "carriers", text: "carriers", className: "right-0 top-[8%]" },
-  { id: "capital", text: "capital", className: "right-0 top-[48%]" },
+const LABEL_LAYOUT = [
+  { id: "charges" as const, className: "left-0 top-[28%]" },
+  { id: "tracking" as const, className: "left-[52%] top-0 -translate-x-1/2" },
+  { id: "carriers" as const, className: "right-0 top-[8%]" },
+  { id: "capital" as const, className: "right-0 top-[48%]" },
 ];
 
-const ShipDiagram = () => (
+type ShipDiagramProps = {
+  t: Dictionary;
+};
+
+const ShipDiagram = ({ t }: ShipDiagramProps) => (
   <figure className="relative mx-auto w-full max-w-[920px]">
     <div className="relative">
       <svg
@@ -27,14 +32,8 @@ const ShipDiagram = () => (
         aria-labelledby="shipTitle shipDesc"
         className="h-auto w-full"
       >
-        <title id="shipTitle">
-          Ocean containership showing freight charges for SMB importers
-        </title>
-        <desc id="shipDesc">
-          A modern ocean containership with colored stacks and callouts for
-          ocean freight charges, tracking, carriers, and working capital at
-          wholesale import-export firms.
-        </desc>
+        <title id="shipTitle">{t.ship.title}</title>
+        <desc id="shipDesc">{t.ship.desc}</desc>
 
         <g opacity="0.1" transform="translate(200 300)">
           <path
@@ -114,18 +113,18 @@ const ShipDiagram = () => (
       </svg>
 
       <ul className="pointer-events-none absolute inset-0 hidden md:block">
-        {LABELS.map((label) => (
+        {LABEL_LAYOUT.map((label) => (
           <li key={label.id} className={`label-caps absolute ${label.className}`}>
-            {label.text}
+            {t.ship.labels[label.id]}
           </li>
         ))}
       </ul>
     </div>
 
     <figcaption className="mt-5 grid grid-cols-2 gap-x-4 gap-y-2 md:hidden">
-      {LABELS.map((label) => (
+      {LABEL_LAYOUT.map((label) => (
         <p key={label.id} className="label-caps">
-          {label.text}
+          {t.ship.labels[label.id]}
         </p>
       ))}
     </figcaption>

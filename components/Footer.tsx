@@ -1,8 +1,13 @@
 // Quiet close: antique-ship watermark, research note, Calendly CTA, and LinkedIn.
 import BookCallButton from "@/components/BookCallButton";
 import { LINKEDIN_URL } from "@/lib/constants";
+import type { Dictionary } from "@/lib/i18n";
 
-const Footer = () => (
+type FooterProps = {
+  t: Dictionary;
+};
+
+const Footer = ({ t }: FooterProps) => (
   <footer className="relative overflow-hidden border-t border-line bg-gradient-to-b from-cream to-[#eef3ea] px-5 pb-12 pt-20 md:px-8 md:pb-14 md:pt-24">
     <svg
       viewBox="0 0 640 180"
@@ -33,19 +38,17 @@ const Footer = () => (
           Greek Ships <span className="font-sans text-sm tracking-[0.2em] text-signal">XYZ</span>
         </p>
         <p className="mt-3 max-w-sm text-sm leading-relaxed text-navy/65">
-          Research with DDP and CIF importers. We talk to the people who pay
-          destination-side ocean freight charges they cannot independently
-          verify.
+          {t.footer.blurb}
         </p>
       </div>
 
       <div className="flex flex-col items-start gap-3 md:items-end">
-        <BookCallButton>Book a call</BookCallButton>
+        <BookCallButton>{t.footer.bookCall}</BookCallButton>
         <a
           href={LINKEDIN_URL}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="LinkedIn profile of Tasos Valtinos"
+          aria-label={t.footer.linkedinAria}
           className="inline-flex min-h-11 min-w-11 items-center justify-center text-navy/70 transition-colors hover:text-signal"
         >
           <svg
