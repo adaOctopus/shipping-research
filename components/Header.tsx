@@ -18,7 +18,7 @@ const Header = ({ locale, t }: HeaderProps) => (
       >
         Greek Ships{" "}
         <span className="text-signal tracking-[0.18em] text-[0.72rem] font-sans font-semibold">
-          XYZ
+          Inc.
         </span>
       </a>
 
