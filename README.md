@@ -35,6 +35,7 @@ Primary action everywhere: [Book a 30-minute call](https://calendly.com/tasos-va
 The page is built for organic search around **unverified ocean freight charges after delivery** — CBM remeasurement, demurrage and detention, customs exam, war-risk — for DDP/CIF wholesale importers. Copy is grounded in live operator research, not generic freight-charge stuffing. Air freight, GST, and courier queries are out of scope.
 
 - Title, description, canonical, Open Graph, Twitter card, robots, and `hreflang` for `en` / `es`
+- Share thumbnail is a 1200×630 hero image (`/opengraph-image`, `/es/opengraph-image`) so LinkedIn, X, and Slack show the page — not a text card
 - `sitemap.xml` (English and Spanish URLs) and `robots.txt`
 - JSON-LD for Organization, WebSite, WebPage, ProfessionalService, and FAQPage
 - A visible, crawlable FAQ (content is in the HTML even when collapsed)
@@ -85,6 +86,7 @@ components/
 lib/
   constants.ts            URLs, site name, title, description
   i18n/                   English and Spanish dictionaries
+  og.tsx                  Open Graph / Twitter share image
   seo.ts                  Locale-aware JSON-LD
   metadata.ts             Next.js Metadata builder
 middleware.ts             Sets x-locale for html lang
