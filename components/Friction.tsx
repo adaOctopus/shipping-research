@@ -1,4 +1,4 @@
-// Four operational frictions small wholesale importers face once cargo is on the water.
+// Four operational frictions small and mid-size ocean forwarders face while cargo is on the water.
 import type { Dictionary } from "@/lib/i18n";
 
 type FrictionProps = {

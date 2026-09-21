@@ -53,6 +53,7 @@ export type Dictionary = {
     blurb: string;
     bookCall: string;
     linkedinAria: string;
+    emailAria: string;
   };
   seo: {
     title: string;

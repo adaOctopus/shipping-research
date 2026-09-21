@@ -1,5 +1,6 @@
 import {
   CALENDLY_URL,
+  EMAIL,
   LINKEDIN_URL,
   SITE_NAME,
   SITE_URL,
@@ -20,11 +21,11 @@ export const buildJsonLd = (locale: Locale) => {
         name: SITE_NAME,
         url: SITE_URL,
         description: t.seo.description,
+        email: EMAIL,
         sameAs: [LINKEDIN_URL],
         founder: {
           "@type": "Person",
           name: "Tasos Valtinos",
-          url: LINKEDIN_URL,
         },
       },
       {
@@ -60,7 +61,7 @@ export const buildJsonLd = (locale: Locale) => {
       {
         "@type": "ProfessionalService",
         "@id": `${SITE_URL}/#service`,
-        name: `${SITE_NAME} ocean freight conversations`,
+        name: `${SITE_NAME} ocean freight research`,
         url: SITE_URL,
         description: t.seo.jsonLdService,
         provider: { "@id": `${SITE_URL}/#organization` },

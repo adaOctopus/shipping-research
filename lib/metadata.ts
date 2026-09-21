@@ -16,7 +16,7 @@ export const buildMetadata = (locale: Locale = "en"): Metadata => {
     authors: [{ name: "Tasos Valtinos", url: SITE_URL }],
     creator: "Tasos Valtinos",
     publisher: SITE_NAME,
-    category: locale === "es" ? "Flete marítimo" : "Ocean freight",
+    category: locale === "es" ? "Transitario oceánico" : "Ocean freight forwarding",
     referrer: "origin-when-cross-origin",
     robots: {
       index: true,

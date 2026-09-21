@@ -1,4 +1,4 @@
-// Crawlable FAQ from operator research: post-delivery charges, CBM, D&D, dispute playbook, FOB vs DDP.
+// Crawlable FAQ from forwarder research: destination charges, CBM, D&D, client invoices, who this is for.
 import type { Dictionary } from "@/lib/i18n";
 
 type FaqProps = {

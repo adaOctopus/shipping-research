@@ -1,7 +1,7 @@
 import { buildOgImage, OG_SIZE, OG_TYPE } from "@/lib/og";
 
 export const alt =
-  "Greek Ships XYZ — flete marítimo más rentable para pymes";
+  "Greek Ships XYZ — flete marítimo más rentable para transitarios";
 export const size = OG_SIZE;
 export const contentType = OG_TYPE;
 

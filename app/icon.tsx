@@ -1,10 +1,14 @@
 import { ImageResponse } from "next/og";
 
-export const size = { width: 32, height: 32 };
+export const size = { width: 512, height: 512 };
 export const contentType = "image/png";
 
-const Icon = () =>
-  new ImageResponse(
+const Icon = async () => {
+  const font = await fetch(
+    "https://cdn.jsdelivr.net/fontsource/fonts/fraunces@5.2.5/latin-800-normal.ttf",
+  ).then((response) => response.arrayBuffer());
+
+  return new ImageResponse(
     (
       <div
         style={{
@@ -15,15 +19,23 @@ const Icon = () =>
           justifyContent: "center",
           background: "#0e2340",
           color: "#f6f0e4",
-          fontSize: 16,
-          fontWeight: 700,
-          letterSpacing: "-0.04em",
+          fontFamily: "Fraunces",
+          fontSize: 188,
+          fontWeight: 800,
+          letterSpacing: "-0.06em",
+          paddingBottom: 12,
         }}
       >
         GS
       </div>
     ),
-    { ...size },
+    {
+      ...size,
+      fonts: [
+        { name: "Fraunces", data: font, weight: 800, style: "normal" },
+      ],
+    },
   );
+};
 
 export default Icon;

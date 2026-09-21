@@ -1,6 +1,6 @@
 export const CALENDLY_URL = "https://calendly.com/tasos-valtinos/30min";
-export const LINKEDIN_URL =
-  "https://www.linkedin.com/in/tasos-valtinos-24572b112/";
+export const LINKEDIN_URL = "https://www.linkedin.com/company/gships-inc";
+export const EMAIL = "tasos.valtinos@greekships.xyz";
 export const SITE_NAME = "Greek Ships XYZ";
 
 const vercelUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
@@ -14,7 +14,7 @@ export const SITE_URL = (
 ).replace(/\/$/, "");
 
 export const SITE_TITLE =
-  "Unverified Ocean Freight Charges After Delivery | Greek Ships XYZ";
+  "Import Operations for Small Ocean Freight Forwarders | Greek Ships XYZ";
 
 export const SITE_DESCRIPTION =
-  "Ocean freight charges billed after delivery that wholesale importers cannot verify: CBM remeasurement, demurrage, detention, customs exam, war-risk. For DDP/CIF import managers at firms of 11–50 people.";
+  "Research with small and mid-size ocean freight forwarders on import operations: destination charges that shock wholesale clients, margin leakage, tracking while cargo is at sea. Book a 30-minute conversation.";

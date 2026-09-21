@@ -12,15 +12,15 @@ const es: Dictionary = {
     languageEs: "Español",
   },
   hero: {
-    h1: "Flete marítimo más rentable para pymes.",
+    h1: "Flete marítimo más rentable para transitarios.",
     h1Emphasis: "rentable",
-    body: "Los cargos inesperados, los retrasos, la aduana y las reclamaciones manuales con los transitarios destruyen su negocio. Aumente sus márgenes y ahorre tiempo de envío con nuestros análisis.",
+    body: "Cuando la carga llega y la factura parece un abuso, el cliente importador mayorista se va. Mientras el contenedor sigue en el mar, el seguimiento, las navieras y el efectivo se comen el margen que creía tener. Investigamos cómo los transitarios oceánicos pequeños y medianos gestionan de verdad las operaciones de importación.",
     cta: "RESERVE UNA LLAMADA CON NOSOTROS",
   },
   ship: {
     title:
-      "Portacontenedores oceánico que muestra los cargos de flete para importadores pyme",
-    desc: "Un portacontenedores oceánico moderno con pilas de color y llamadas a cargos de flete marítimo, seguimiento, navieras y capital de trabajo en mayoristas de importación-exportación.",
+      "Portacontenedores oceánico que muestra cargos, seguimiento, navieras y capital para transitarios",
+    desc: "Un portacontenedores oceánico moderno con pilas de color y llamadas a cargos de flete marítimo, seguimiento, navieras y capital de trabajo en transitarios pequeños y medianos.",
     labels: {
       charges: "cargos",
       tracking: "seguimiento",
@@ -29,127 +29,123 @@ const es: Dictionary = {
     },
   },
   friction: {
-    h2: "Gerentes de importación, compras y FMCG se enfrentan a estos retos.",
+    h2: "Los transitarios oceánicos pequeños y medianos se enfrentan a estos retos.",
     problems: [
       {
         number: "01",
-        title: "Cargos que aparecen después de la cotización",
-        body: "Una remedición de CBM o de peso que no coincide con la lista de empaque. Demurrage y detention con un tiempo libre distinto al pactado. Recargos por examen aduanero, recargos por riesgo de guerra, cargos por discrepancia de destino. La factura llega después de la entrega. El registro de medición queda del lado del transitario. No se comparte a menos que usted ya sepa pedirlo.",
+        title: "Cargos que caen sobre el cliente",
+        body: "Usted cotizó un número. Destino lanza otro: una remedición de CBM, D&D con un tiempo libre distinto, un examen aduanero, un recargo de guerra. El importador ve una factura disparatada con su nombre. La relación paga el golpe, sea la partida suya, del agente o de la naviera.",
       },
       {
         number: "02",
         title: "Un seguimiento que señala un punto, no el panorama",
-        body: "Un enlace reenviado muestra la última ubicación conocida. No indica si el contenedor llegará al corte, se quedará en transbordo o perderá el camión.",
+        body: "El cliente llama porque un enlace reenviado muestra la última ubicación conocida. No indica si el contenedor llegará al corte, se quedará en transbordo o perderá el camión — y quien tiene que responder es usted.",
       },
       {
         number: "03",
-        title: "El transitario como única puerta a la naviera",
-        body: "La prueba está en la naviera o en la consolidación LCL. El importador habla con el transitario. Los transitarios medianos suelen incorporar cargos no verificados al margen. Pedir el ticket de báscula, la tarifa pactada y el cálculo W/M hace desaparecer muchas partidas. Las excepciones rebotan. Se pierden días.",
+        title: "Atrapado entre el importador y la naviera",
+        body: "La prueba está en la naviera o en la consolidación LCL. El importador habla con usted. Las excepciones rebotan. Se pierden días. Las partidas sin documentar o se comen su margen o se convierten en la factura que rompe la cuenta.",
       },
       {
         number: "04",
         title: "El efectivo sale antes de que la carga genere ingreso",
-        body: "El flete, los aranceles y los depósitos salen mientras el contenedor sigue en el mar. El retraso no es solo stock tardío. Es capital de trabajo sentado en un contenedor.",
+        body: "El flete, los aranceles y los depósitos salen mientras el contenedor sigue en el mar. El retraso no es solo una entrega tardía. Es capital de trabajo sentado en un contenedor, y un cliente que ya mira el reloj.",
       },
     ],
   },
   conversation: {
-    h2: "Hable con nosotros para mejorar sus márgenes cuando la carga marítima llega a su muelle.",
-    body: "Conversamos con gerentes de importación DDP y CIF, gerentes de compras y compradores de FMCG en mayoristas de importación-exportación de unas 11 a 50 personas: quienes pagan en destino, no exportadores FOB. Si el último envío marítimo trajo cargos después de la entrega que no pudo verificar, nos gustaría saber cuáles fueron.",
+    h2: "Hable con nosotros para cuidar al cliente de importación y el margen cuando llega la carga.",
+    body: "Conversamos con gerentes de operaciones, gerentes de sucursal, coordinadores de importación y agentes de destino en transitarios oceánicos pequeños y medianos. Esto es descubrimiento, no una venta. Si el último expediente de importación trajo una factura de destino que sorprendió al cliente — o una partida que se comió el margen en silencio — nos gustaría saber cómo funciona eso de verdad.",
     cta: "Reservar una llamada",
     whoLabel: "A quién va dirigido",
     roles: [
-      "Gerentes de importación",
-      "Compradores de FMCG",
-      "Compradores de importación",
-      "Gerentes de compras",
-      "Gerentes de abastecimiento",
-      "Gerentes de cadena de suministro",
+      "Gerentes de operaciones",
+      "Gerentes de sucursal",
+      "Coordinadores de importación",
+      "Agentes de destino",
+      "Tarifas y cotización",
+      "Gerentes de cuenta",
     ],
     whoBody:
-      "Si usted contrata al transitario de destino bajo DDP o CIF — y el último envío trajo una remedición, D&D o un recargo que no pudo comprobar — esa es la conversación.",
+      "Si usted lleva expedientes de importación marítima para clientes mayoristas — y los cargos en tránsito o posteriores a la entrega aprietan la relación o el margen — esa es la conversación.",
   },
   faq: {
-    h2: "Cargos de flete marítimo facturados después de la entrega: lo que ven los operadores.",
+    h2: "Operaciones de importación en flete marítimo: lo que ven los transitarios pequeños.",
     intro:
-      "A partir de conversaciones con gerentes de importación, gerentes de compras y compradores de FMCG en mayoristas de 11 a 50 personas: remedición, D&D, examen aduanero, recargo por riesgo de guerra y cómo impugnar una partida que no se puede verificar.",
+      "A partir de las conversaciones que queremos tener con equipos de operaciones, destino y cuentas en transitarios oceánicos pequeños y medianos: cargos posteriores a la entrega que sorprenden al cliente importador, fuga de margen, seguimiento mientras el contenedor está en el mar, y cómo una casa gestiona una partida que no puede verificar.",
     items: [
       {
         question:
-          "¿Por qué aparecen cargos de flete marítimo después de la entrega?",
+          "¿Por qué los cargos de destino rompen cuentas de importación mayorista?",
         answer:
-          "Los importadores que envían con regularidad por vía marítima reciben facturas después de la entrega por cargos que no pueden verificar de forma independiente. El más habitual es un cargo por remedición de CBM o de peso que no coincide con la lista de empaque. También son frecuentes: demurrage y detention facturados con un tiempo libre distinto al pactado, recargos por examen aduanero, recargos por riesgo de guerra y por desvío, y cargos por discrepancia de destino cuando el MBL indica un puerto y el contenedor queda en otro.\n\nLa prueba que lo resolvería suele existir en el archivo de la naviera o del transitario. No se envía a menos que el importador ya sepa pedirla. Las empresas con alguien que audita cada partida de la factura lo detectan con una hoja de cálculo. Quienes salen perjudicados envían con la frecuencia suficiente para que sume, y no están organizados para revisar cada línea: en general, mayoristas de importación-exportación de unas 11 a 50 personas.",
+          "Al importador se le cotizó un número. Después de la entrega llega otra factura: una remedición de CBM o de peso que no coincide con la lista de empaque, demurrage y detention con un tiempo libre distinto al pactado, un recargo por examen aduanero, un recargo de guerra o de desvío, un cargo por discrepancia de destino cuando el MBL indica un puerto y el contenedor está en otro.\n\nLa prueba que lo resolvería suele existir en el expediente de la naviera o en su casa. No siempre se adjunta a la factura del cliente. El importador mayorista no ve un problema entre naviera y transitario. Lo ve a usted. Las cuentas que envían con la frecuencia suficiente para que sume — y que no tienen a alguien revisando cada línea — son las que se van.",
       },
       {
         question:
-          "¿Qué tan frecuentes son los cargos sorpresa en los envíos marítimos?",
+          "¿Con qué frecuencia aparecen partidas sorpresa en los expedientes de un transitario pequeño?",
         answer:
-          "No es un caso extremo ni es universal. Operadores que vigilan de cerca ven demurrage en solo 1 o 2 de unos 20 envíos mensuales. Otros reportan partidas sorpresa en aproximadamente 1 de cada 5 envíos últimamente, y ya no las tratan como accidentes. Entre esas cuentas, la tasa recurrente se sitúa alrededor del 5–20 % de los envíos.\n\nLos transitarios medianos son los infractores más frecuentes, porque los cargos no verificados suelen estar incorporados al modelo de margen. Los nombres grandes son más limpios, pero igual se cuelan cargos si nadie revisa el papeleo. Pedir primero la documentación de respaldo hace desaparecer muchos de ellos. En el mercado, una auditoría completa de facturas sitúa el gasto de flete recuperable en el rango del 3–7 % cuando de verdad se tira del expediente.",
+          "No es un caso extremo ni es universal. Operadores que vigilan de cerca ven demurrage en solo 1 o 2 de unos 20 envíos mensuales. Otros reportan partidas sorpresa en aproximadamente 1 de cada 5 envíos últimamente, y ya no las tratan como accidentes. Entre esas cuentas, la tasa recurrente se sitúa alrededor del 5–20 % de los envíos.\n\nEn un escritorio oceánico pequeño o mediano, las partidas sin documentar se absorben como margen o se repercuten. En ambos casos aparecen: como un expediente más delgado, o como un cliente que cree que la factura es un abuso. Pedir primero el respaldo a la naviera o a la consolidación hace desaparecer muchas. En el mercado, una auditoría completa de facturas sitúa el gasto de flete recuperable en el rango del 3–7 % cuando de verdad se tira del expediente.",
       },
       {
         question:
           "¿Qué es un recargo por remedición de CBM o dimensional en flete marítimo?",
         answer:
-          "La remedición en destino cambia el volumen o el peso facturado respecto de lo declarado. En LCL se trata como procedimiento habitual; un cargo posterior a la entrega de unos 420 dólares es un tamaño que se reporta a menudo, incluso en casos en los que el CBM coincidía exactamente con la lista de empaque. El registro de medición casi siempre existe. No se ofrece a menos que usted lo pida.\n\nLa cifra remedida puede salir más baja o más alta — paletizar cambia el volumen medido en ambos sentidos —, así que, como mínimo, es una variación que no se informa por defecto, no siempre un esquema. En FCL, el flete marítimo suele ser tarifa plana con independencia del CBM usado dentro de la caja; un cargo extra de CBM después de la entrega suele ser señal de que el movimiento era en realidad LCL. Los pallets no apilables a veces se costean a una altura convencional (unos 220–250 cm) con independencia de la altura real: conviene comprobar esa convención antes de tratar cada diferencia de CBM como un inflado.",
+          "La remedición en destino cambia el volumen o el peso facturado respecto de lo declarado. En LCL se trata como procedimiento habitual; un cargo posterior a la entrega de unos 420 dólares es un tamaño que se reporta a menudo, incluso en casos en los que el CBM coincidía exactamente con la lista de empaque. El registro de medición casi siempre existe. No se ofrece a menos que alguien lo pida.\n\nLa cifra remedida puede salir más baja o más alta — paletizar cambia el volumen medido en ambos sentidos —, así que, como mínimo, es una variación que no se informa por defecto, no siempre un esquema. En FCL, el flete marítimo suele ser tarifa plana con independencia del CBM usado dentro de la caja; un cargo extra de CBM después de la entrega suele ser señal de que el movimiento era en realidad LCL. Los pallets no apilables a veces se costean a una altura convencional (unos 220–250 cm) con independencia de la altura real: conviene comprobar esa convención antes de tratar cada diferencia de CBM como un inflado, y antes de enviársela al importador.",
       },
       {
         question:
           "¿Qué son demurrage, detention y otros cargos de flete posteriores a la entrega?",
         answer:
-          "Demurrage y detention son cargos de almacenamiento y de equipo una vez vencido el último día libre. Son solo una parte de lo que aparece después de la entrega. El resto del patrón incluye: cargos por examen aduanero cuando se ocultan los recibos; almacenamiento por clima o fuerza mayor facturado por encima del mercado durante un cierre documentado; detention de drayage sin aviso en tiempo real de que el tiempo libre venció; recargos por riesgo de guerra y por cambio de destino sobre cajas que nunca se acercaron a la zona de riesgo; cargos de liberación por discrepancia de destino cuando el MBL y el puerto real de descarga no coinciden; y desajustes de Incoterms / tiempo libre, cuando el agente de destino aplica un plazo distinto al pactado en origen. Los embarcadores pequeños y medianos tienen poco poder de negociación. Los grandes obtienen exenciones.",
+          "Demurrage y detention son cargos de almacenamiento y de equipo una vez vencido el último día libre. Son solo una parte de lo que aparece después de la entrega. El resto del patrón incluye: cargos por examen aduanero cuando se ocultan los recibos; almacenamiento por clima o fuerza mayor facturado por encima del mercado durante un cierre documentado; detention de drayage sin aviso en tiempo real de que el tiempo libre venció; recargos por riesgo de guerra y por cambio de destino sobre cajas que nunca se acercaron a la zona de riesgo; cargos de liberación por discrepancia de destino cuando el MBL y el puerto real de descarga no coinciden; y desajustes de Incoterms / tiempo libre, cuando el agente de destino aplica un plazo distinto al pactado en origen. Las casas pequeñas y medianas tienen poco poder de negociación con la naviera. Los grandes embarcadores obtienen exenciones. Usted igual tiene que explicar el expediente al cliente.",
       },
       {
         question:
-          "¿Cómo se impugnan cargos de flete marítimo que no se pueden verificar?",
+          "¿Cómo se gestiona un cargo de flete marítimo que no se puede verificar?",
         answer:
-          "El mismo procedimiento aparece una y otra vez en LCL, FCL y courier. Pida el registro de medición o de báscula ligado a ese envío concreto — no un número reexpresado por el transitario. Pida la tarifa o la confirmación de flete que realmente se pactó. Pida el cálculo detrás de la cifra en dólares, incluido el criterio W/M (peso o medida, el que sea mayor), desglosado si hay paletizado.\n\nPlantee la reclamación sin confrontación: no se niega a pagar, sus dimensiones registradas no coinciden y el papeleo debería aclararlo. Pague lo que no está en disputa. Retenga por escrito solo la partida impugnada.\n\nPara demurrage y detention en Estados Unidos, la norma de la FMC de mayo de 2024 incluye la disposición de contenedor no disponible: la parte que factura no puede cobrar D&D por ningún periodo en el que el contenedor no estuviera realmente disponible (examen aduanero, retraso de terminal o ferrocarril fuera de su control). Obtenga las marcas de tiempo de disponibilidad de la terminal y la orden de retiro o ferrocarril con fecha anterior al último día libre. Cite la disposición de contenedor no disponible por su nombre. La mayoría de las navieras revierten el cargo en la primera impugnación escrita. Si no, una queja CADRS ante la FMC es un camino de 30 a 60 días.\n\nNo todo documento faltante es mala fe: algunos cargos siguen pendientes aguas arriba, de la naviera al transitario. Y la prueba sola no siempre basta si impugnar el cargo retendría el contenedor y arriesgaría un desabastecimiento.",
+          "El mismo procedimiento aparece una y otra vez en LCL y FCL. Consiga el registro de medición o de báscula ligado a ese envío concreto — no un número reexpresado. Consiga la tarifa o la confirmación de flete que realmente se pactó. Consiga el cálculo detrás de la cifra en dólares, incluido el criterio W/M (peso o medida, el que sea mayor), desglosado si hay paletizado. Luego decida qué absorbe y qué repercute.\n\nCon el cliente, plantee la reclamación sin confrontación: no está soltando una sorpresa, las dimensiones registradas no coinciden y el papeleo debería aclararlo. Repercuta solo lo que pueda mostrar. Retenga por escrito la partida impugnada hasta que el expediente esté limpio.\n\nPara demurrage y detention en Estados Unidos, la norma de la FMC de mayo de 2024 incluye la disposición de contenedor no disponible: la parte que factura no puede cobrar D&D por ningún periodo en el que el contenedor no estuviera realmente disponible (examen aduanero, retraso de terminal o ferrocarril fuera de su control). Obtenga las marcas de tiempo de disponibilidad de la terminal y la orden de retiro o ferrocarril con fecha anterior al último día libre. Cite la disposición de contenedor no disponible por su nombre. La mayoría de las navieras revierten el cargo en la primera impugnación escrita. Si no, una queja CADRS ante la FMC es un camino de 30 a 60 días.\n\nNo todo documento faltante es mala fe: algunos cargos siguen pendientes aguas arriba, de la naviera a la casa. Y la prueba sola no siempre basta si retener el contenedor para discutir la partida vaciaría el stock del importador.",
       },
       {
-        question:
-          "¿Quién paga los cargos extra de flete bajo FOB frente a DDP, y para quién es esto?",
+        question: "¿Para quién es esta investigación, y para quién no?",
         answer:
-          "Bajo FOB, los cargos extra de destino los paga la propia empresa importadora: ese es el término. Bajo DDP, los cargos extra debería pagarlos el transitario. Los importadores CIF y DDP que contratan y pagan al transitario de destino son a quienes esto les pega: gerentes de importación, gerentes de abastecimiento, gerentes de compras, compradores de FMCG, gerentes de cadena de suministro y coordinadores logísticos del lado comprador en mayoristas de importación-exportación de 11 a 50 personas.\n\nNo es el exportador FOB (la responsabilidad termina en origen), ni el operador de graneles en contratos GAFTA (un mecanismo de demurrage distinto), ni transitarios o navieras. La mayoría de las respuestas de «a mí no me pasa» se explican por los Incoterms, que dejan a esa persona fuera de la exposición — no porque el problema sea raro.",
+          "Transitarios oceánicos pequeños y medianos que gestionan operaciones de importación para clientes mayoristas: gerentes de operaciones, gerentes de sucursal, coordinadores de importación, agentes de destino, tarifas y gerentes de cuenta. Quienes se sientan entre la naviera y el importador mientras la carga está en el mar, y quienes envían la factura cuando llega.\n\nNo son los 3PL gigantes con un escritorio de auditoría, ni las navieras, ni el importador mayorista, ni las casas FOB de origen cuya responsabilidad termina en el puerto de carga. Si sus expedientes de importación, sus relaciones con clientes o su margen se mueven cuando un contenedor está en el mar o cuando aparecen cargos de destino — esa es la conversación.",
       },
     ],
   },
   footer: {
     blurb:
-      "Investigación con importadores DDP y CIF. Hablamos con quienes pagan en destino cargos de flete marítimo que no pueden verificar de forma independiente.",
+      "Investigación con transitarios oceánicos pequeños y medianos. Hablamos de operaciones de importación, facturas al cliente después de la entrega y margen mientras la carga sigue en el mar.",
     bookCall: "Reservar una llamada",
-    linkedinAria: "Perfil de LinkedIn de Tasos Valtinos",
+    linkedinAria: "GShips Inc en LinkedIn",
+    emailAria: "Enviar un correo a Tasos Valtinos",
   },
   seo: {
-    title:
-      "Cargos de flete marítimo no verificables después de la entrega",
+    title: "Operaciones de importación para transitarios oceánicos pequeños",
     description:
-      "Cargos de flete marítimo facturados después de la entrega que el importador mayorista no puede verificar: remedición de CBM, demurrage, detention, examen aduanero, recargo por riesgo de guerra. Para gerentes de importación DDP/CIF en empresas de 11 a 50 personas.",
+      "Investigación con transitarios oceánicos pequeños y medianos sobre operaciones de importación: cargos de destino que sorprenden al cliente mayorista, fuga de margen, seguimiento mientras la carga está en el mar. Reserve una conversación de 30 minutos.",
     keywords: [
-      "cargos de flete marítimo",
-      "flete marítimo",
-      "flete oceánico",
-      "cargos de flete de contenedor",
-      "cargos adicionales de flete",
+      "transitario oceánico",
+      "transitario pequeño",
+      "transitario mediano",
+      "operaciones de flete marítimo",
+      "operaciones de importación",
+      "márgenes de transitario",
+      "cargos de destino",
       "cargos de flete después de la entrega",
       "remedición CBM",
-      "recálculo dimensional",
       "demurrage y detention",
-      "recargo por riesgo de guerra",
-      "cargos de examen aduanero",
       "cargos LCL en destino",
-      "impugnación de factura de flete",
-      "importador DDP",
-      "gerente de importación",
-      "gerente de compras",
-      "comprador FMCG",
-      "importación exportación mayorista",
-      "importador pyme",
+      "factura de transitario al cliente",
+      "operaciones NVOCC",
+      "agente de destino",
+      "seguimiento de carga marítima",
+      "transitario de importación mayorista",
     ],
     jsonLdAbout:
-      "Cargos de flete marítimo no verificables facturados después de la entrega",
+      "Operaciones de importación en transitarios oceánicos pequeños y medianos",
     jsonLdAudience:
-      "Gerentes de importación DDP y CIF, gerentes de compras y compradores de FMCG en mayoristas de importación-exportación de 11 a 50 personas",
+      "Gerentes de operaciones, gerentes de sucursal, coordinadores de importación y agentes de destino en transitarios oceánicos pequeños y medianos",
     jsonLdService:
-      "Conversaciones de investigación con importadores DDP y CIF sobre cargos de flete marítimo facturados después de la entrega que no se pueden verificar de forma independiente: remedición, demurrage, detention, examen aduanero, recargo por riesgo de guerra y discrepancia de destino.",
+      "Conversaciones de investigación con transitarios oceánicos pequeños y medianos sobre operaciones de importación: cargos posteriores a la entrega que afectan la relación con el cliente mayorista, fuga de margen y carga en el mar.",
     jsonLdOffer: "Conversación de 30 minutos sobre flete marítimo",
   },
 };

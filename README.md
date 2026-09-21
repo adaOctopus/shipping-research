@@ -1,38 +1,39 @@
 # Greek Ships XYZ
 
-A landing page for **Greek Ships XYZ** — ocean freight conversations with small wholesale import-export companies. The site exists so a cold call can point somewhere real: who we talk to, what we are studying, and a 30-minute Calendly conversation.
+A landing page for **Greek Ships XYZ** — ocean freight conversations with **small and mid-size ocean freight forwarders**. The site exists so a cold call can point somewhere real: who we talk to, what we are studying, and a 30-minute Calendly conversation.
 
 Default language is **English** (`/`). The full page also exists in **Spanish** (`/es`), with a language switch in the top right of the header.
 
-It is not a freight product. It is a research front door, written so import managers, purchasing managers, and FMCG buyers can also find it on Google.
+It is not a freight product. It is a research front door, written so operations, destination, and account teams at ocean forwarders can also find it on Google.
 
 ## Who it is for
 
-Operators at wholesale import-export firms of about **11–50 people**:
+People running **import operations** at small and mid-size ocean freight forwarders:
 
-- Import managers
-- FMCG buyers
-- Import buyers
-- Purchasing managers
-- Supply chain managers
+- Operations managers
+- Branch managers
+- Import coordinators
+- Destination agents
+- Pricing and quoting
+- Account managers
 
-The research is about ocean freight charges billed after delivery that importers cannot independently verify: CBM remeasurement, demurrage and detention, customs exam markups, war-risk and destination-mismatch fees. The people who get hurt ship often enough for it to add up and do not have someone checking every invoice.
+The research is about how those houses manage import files while cargo is on the water — and what happens when destination charges land as a crazy invoice on wholesale import clients, or quietly eat the forwarder’s margin. CBM remeasurement, demurrage and detention, customs exam, war-risk, and tracking that is a pin instead of a picture.
 
 ## What the page contains
 
 A single English route (`/`) and a Spanish equivalent (`/es`), each with four sections and a footer:
 
 1. **Research** — headline, audience, and an original containership diagram with callouts (`charges`, `tracking`, `carriers`, `capital`)
-2. **The friction** — four operational problems, written the way operators describe them
+2. **The friction** — four operational problems, written the way forwarders describe them
 3. **A conversation** — who a call is for, what it is, and what it is not
-4. **FAQ** — post-delivery charges, CBM remeasurement, D&amp;D, dispute playbook, FOB vs DDP
-5. **Footer** — antique-ship watermark, research note, Calendly button, LinkedIn
+4. **FAQ** — destination charges vs client relationships, CBM remeasurement, D&amp;D, handling a line you cannot verify, who this is for
+5. **Footer** — antique-ship watermark, research note, Calendly button, email, LinkedIn
 
 Primary action everywhere: [Book a 30-minute call](https://calendly.com/tasos-valtinos/30min)
 
 ## SEO
 
-The page is built for organic search around **unverified ocean freight charges after delivery** — CBM remeasurement, demurrage and detention, customs exam, war-risk — for DDP/CIF wholesale importers. Copy is grounded in live operator research, not generic freight-charge stuffing. Air freight, GST, and courier queries are out of scope.
+The page is built for organic search around **import operations at small and mid-size ocean freight forwarders** — destination charges, client invoices after delivery, margin leakage, cargo on the water. Copy is grounded in operator language, not generic freight-charge stuffing. Air freight, GST, and courier queries are out of scope.
 
 - Title, description, canonical, Open Graph, Twitter card, robots, and `hreflang` for `en` / `es`
 - Share thumbnail is a 1200×630 hero image (`/opengraph-image`, `/es/opengraph-image`) so LinkedIn, X, and Slack show the page — not a text card
@@ -71,6 +72,10 @@ app/
   manifest.ts             Web app manifest
   opengraph-image.tsx     Social share image
   icon.tsx                Favicon
+  twitter-image.tsx       Twitter share image
+public/
+  linkedin-profile.png    512×512 company mark — cream GS on navy hull / teal keel
+  favicon-512.png         512×512 favicon — cream GS on hull navy
 components/
   Header.tsx              Sticky wordmark, journey strip, flag switch, Book a call
   LanguageSwitch.tsx      UK / Spain flag toggle for English and Spanish
@@ -79,9 +84,9 @@ components/
   ShipDiagram.tsx         Original SVG containership and labels
   Friction.tsx            Section 02 — four ocean-cargo problems
   Conversation.tsx        Section 03 — audience and call framing
-  Faq.tsx                 Ocean freight charge questions for the ICP
+  Faq.tsx                 Ocean freight questions for small forwarders
   JsonLd.tsx              Schema.org graph
-  Footer.tsx              Watermark, research note, Calendly, LinkedIn
+  Footer.tsx              Watermark, research note, Calendly, email, LinkedIn
   BookCallButton.tsx      Shared Calendly link
 lib/
   constants.ts            URLs, site name, title, description

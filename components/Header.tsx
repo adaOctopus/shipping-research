@@ -16,7 +16,7 @@ const Header = ({ locale, t }: HeaderProps) => (
         aria-label={t.header.homeAria}
         className="shrink-0 font-display text-[1.05rem] leading-none text-navy"
       >
-        Greek Ships{" "}
+        GShips{" "}
         <span className="text-signal tracking-[0.18em] text-[0.72rem] font-sans font-semibold">
           Inc.
         </span>
