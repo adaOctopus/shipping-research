@@ -18,7 +18,7 @@ const HomePage = ({ locale }: HomePageProps) => {
     <div id="top" className="min-h-screen bg-cream">
       <Header locale={locale} t={t} />
       <main id="main">
-        <Hero locale={locale} t={t} />
+        <Hero t={t} />
         <Friction t={t} />
         <Conversation t={t} />
         <Faq t={t} />
