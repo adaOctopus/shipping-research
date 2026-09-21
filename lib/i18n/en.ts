@@ -53,20 +53,18 @@ const en: Dictionary = {
     ],
   },
   conversation: {
-    h2: "Chat with us to keep import clients and margin when ocean cargo lands.",
-    body: "We speak with operations managers, branch managers, import coordinators, and destination agents at small and mid-size ocean freight forwarders. This is discovery, not a pitch. If the last import file came with a destination invoice that shocked the client — or a line that quietly ate your margin — we would like to hear how that actually works.",
+    h2: "Chat with us to optimize your import operations and increase your margins.",
+    body: "We speak with operations managers, branch managers, import coordinators, and destination agents at small and mid-size ocean freight forwarders. This is discovery, not a pitch. If the last import file came with a destination invoice that shocked the client - or a line that quietly ate your margin - we would like to hear how that actually works.",
     cta: "Book a call",
     whoLabel: "Who this is for",
     roles: [
       "Operations managers",
-      "Branch managers",
+      "Ocean Freight Forwarders",
       "Import coordinators",
-      "Destination agents",
-      "Pricing and quoting",
-      "Account managers",
+      "Seafreight Specialists"
     ],
     whoBody:
-      "If you run ocean import files for wholesale clients — and cargo-on-the-water or post-delivery charges are squeezing the relationship or the margin — that is the conversation.",
+      "If you run ocean import files for wholesale clients - and cargo-on-the-water or post-delivery charges are squeezing the relationship or the margin - that is the conversation.",
   },
   faq: {
     h2: "Import operations on ocean cargo - what small forwarders actually see.",
